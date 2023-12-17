@@ -1,0 +1,344 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Your Chosen Font', sans-serif;
+  font-weight: normal;
+  text-align: left;
+}
+.p-2{
+padding: 2px;
+}
+.p-4{
+padding: 4px;
+}
+.p-8{
+padding: 8px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Navigation Menu */
+nav {
+  font-size: 18px;
+}
+
+nav ul ul {
+  font-size: 16px;
+}
+
+/* Buttons */
+.button-primary, .button-secondary {
+  font-size: 16px;
+}
+
+.button-primary:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+/* Form Fields */
+input, label {
+  font-size: 16px;
+}
+
+input:focus, button:focus {
+  outline: 2px solid var(--accent-color);
+}
+
+/* Theme Colors */
+:root {
+  --primary-color: #3498db; /* Tech Blue */
+  --secondary-color: #2ecc71; /* Tech Green */
+  --accent-color: #f39c12; /* Tech Yellow */
+  --background-color: #ecf0f1; /* Light Gray */
+  --text-color: #333333; /* Dark Gray */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: darken(var(--primary-color), 10%);
+}
+
+/* Additional Color Variations */
+.shadow-blue {
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
+
+.shadow-green {
+  box-shadow: 0 4px 8px rgba(46, 204, 113, 0.2);
+}
+
+.shadow-yellow {
+  box-shadow: 0 4px 8px rgba(243, 156, 18, 0.2);
+}
+
+/* Update this in your existing CSS file or create a new one */
+
+/* Courses Section */
+/* Update this in your existing CSS file or create a new one */
+
+/* Courses Section */
+.courses {
+  padding: 40px 0;
+  text-align: center; /* Center the courses section */
+}
+
+.course-grid {
+  max-width: 1200px; /* Set a max width to the grid */
+  margin: 0 auto; /* Center the grid within the max width */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Center the items within the grid */
+}
+
+.course {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.course:hover {
+  transform: scale(1.05);
+}
+
+.course img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.course-content {
+  padding: 20px;
+}
+
+.course h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.course p {
+  margin-top: 10px;
+  color: #777;
+}
+
+.course a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.course a:hover {
+  background: linear-gradient(to right, #45a049, #1976D2); /* Darker gradient on hover */
+}
+
+/* Teacher Registration Section */
+.teacher-registration {
+  background-color: #2ecc71; /* Tech Green */
+  color: #fff;
+  text-align: center;
+  padding: 60px 0; /* Increased padding for a more prominent appearance */
+}
+
+.teacher-registration p {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #f5f5f5; /* Lighter text color for better readability */
+}
+
+.teacher-registration a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #f39c12, #e74c3c); /* Gradient background */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.teacher-registration a:hover {
+  background: linear-gradient(to right, #e74c3c, #c0392b); /* Darker gradient on hover */
+}
+/* <!-- Curriculum Section --> */
+
+.curriculum {
+  background-image: url('https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dXJsfGVufDB8fDB8fHww');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.curriculum-content {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay to improve text visibility */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.curriculum h2 {
+  font-size: 2.5em; /* Larger heading size */
+  margin-bottom: 20px;
+}
+
+.curriculum p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.experience-years {
+  font-size: 3em; /* Larger text size for years of experience */
+  font-weight: bold;
+}
+
+/* Animation Effect */
+.curriculum-content {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Offer Section */
+.offer {
+  background-color: #3498db; /* Tech Blue */
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.offer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.offer h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.offer p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Subscription Form */
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Tech Green */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Legacy Section */
+.legacy {
+  background-color: #ecf0f1; /* Light Gray */
+  color: #333333; /* Dark Gray */
+  text-align: center;
+  padding: 100px 0;
+}
+
+.legacy-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.legacy h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.legacy p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+}
